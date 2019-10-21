@@ -1,29 +1,30 @@
-# maps-client
+# Maps Realtime - Client
 
-## Project setup
+Projeto de testes com websocket PHP para exibir a posição em tempo real do usuário.
+
+Esse projeto é o front-end da aplicação, sendo necessário para seu funcionamento lado servidor da aplicação, esse disposto em https://github.com/debgustavocastro/maps-realtime-server.
+
+Essa aplicação foi construída utilizando como base o framework VueJS.
+
+## Instalação do projeto
 ```
+#Acessa o diretório da aplicação
+cd  maps-realtime-client
+
+#Instala as dependências
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Configurando o projeto
+No arquivo src/components/Template.vue:61, deve-se setar o endereço do servidor que contém o socket.
+
+
+### Compilar para desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar e minificar para produção
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
